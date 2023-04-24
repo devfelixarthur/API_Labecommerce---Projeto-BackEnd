@@ -35,6 +35,8 @@ A coleção de endpoints da API LabeCommerce no Postman foi criada para gerencia
 -   **`Delete product by id`**: Permite excluir um produto existente com base no ID de cadastrado.
 
 -   **`Delete User by id`**: Permite excluir um usuário existente com base no ID de cadastrado.
+
+-   **`Delete Purchase by id`**: Permite excluir uma purchase existente com base no ID de cadastrado.
     
 -   **`Get Purchase by id`**: Retorna informações sobre uma compra existente com base no ID da compra especificada.
     
