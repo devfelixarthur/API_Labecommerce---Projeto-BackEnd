@@ -555,3 +555,38 @@ app.get("/purchases/:purchaseId", async (req: Request, res: Response) => {
     res.status(error.status || 500).send(error.message);
   }
 });
+
+
+//  CRIAÇÃO DO ENDPOINT DELETE PURCHASE BY ID
+
+app.delete("/purchases/:id", async (req: Request, res: Response) => {
+  try {
+    const purchaseId: string = req.params.id;
+
+    if (!purchaseId) {
+      res.status(404);
+      throw new Error("O 'id' da compra deve ser informado.");
+    }
+
+    const findPurchase = await db.raw(`SELECT * FROM purchases WHERE id = "${purchaseId}";`);
+
+    if (findPurchase.length === 0) {
+      res.status(404);
+      throw new Error(`Compra com id ${purchaseId} não encontrada.`);
+    }
+
+    // Primeiro, deletamos os registros da tabela "purchase_products" referentes a essa compra
+    const deletePurchaseProducts = await db.raw(`DELETE FROM purchase_products WHERE purchase_id = "${purchaseId}";`);
+
+    // Em seguida, deletamos o registro da tabela "purchases"
+    const deletePurchase = await db.raw(`DELETE FROM purchases WHERE id = "${purchaseId}";`);
+
+    res.status(200).send(`Compra com id ${purchaseId} foi removida com sucesso.`);
+  } catch (error: any) {
+    console.log(error);
+    if (res.statusCode === 200) {
+      res.status(500);
+    }
+    res.send(error.message);
+  }
+});
