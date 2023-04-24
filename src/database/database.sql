@@ -31,7 +31,7 @@ paid INTEGER NOT NULL,
 Foreign Key (buyer_id) REFERENCES users(id)
 );
 
-SELECT * FROM purchase_products;
+SELECT * FROM purchases;
 
 
 CREATE TABLE purchase_products (
