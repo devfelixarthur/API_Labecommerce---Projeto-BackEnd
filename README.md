@@ -84,13 +84,13 @@ Durante a realização do projeto, criamos um grupo de apoio para que  conseguí
 
 **Guilherme Dias**,
 
-- **Jaziel Bury**,
+**Jaziel Bury**,
 
-- **Pedro Henrique**,
+**Pedro Henrique**,
 
-- **Pedro Magno**,
+**Pedro Magno**,
 
-- **Felício de Souza**, 
+**Felício de Souza**, 
 
 ##  Status do projeto
 
