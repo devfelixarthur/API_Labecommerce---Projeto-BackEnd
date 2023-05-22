@@ -96,4 +96,4 @@ Durante a realização do projeto, criamos um grupo de apoio para que  conseguí
 
 ##  Status do projeto
 
-Primeira parte finalizado.
+Concluído.
