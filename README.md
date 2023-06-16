@@ -80,7 +80,7 @@ Para instalar o projeto que utiliza NodeJS, Typescript, Express, SQL e SQLite, K
 
 **Instalação do Postman**: faça o download e instale o Postman em https://www.postman.com/downloads/.
 
-##  Colaboradores
+##  Colaboradores 🛠
 
 Durante a realização do projeto, criamos um grupo de apoio para que  conseguíssemos ajudar e ser ajudado a medida que as dúvidas e os erros iam aparecendo, e nesse processo obtive o apoio das pessoas abaixo listadas.
 
