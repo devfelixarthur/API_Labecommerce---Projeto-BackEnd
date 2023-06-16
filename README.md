@@ -94,6 +94,6 @@ Durante a realização do projeto, criamos um grupo de apoio para que  conseguí
 
 **Felício de Souza**, 
 
-##  Status do projeto
+## Status do Projeto  🚧
 
-Concluído.
+Concluído.🙏👨‍💻
